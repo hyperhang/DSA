@@ -36,3 +36,8 @@ sol = Solution()
 PnL = [9,7,6,5,4,4,3,2]  # [-5, -4, -4, -3, -2]
 # PnL = [5,7,3,  4,  6,  9,   5,   2,    7,  6,  7]  # [-7, -5, -6, -2, -3, -4]
 print(sol.max_months_can_afford(PnL)) 
+
+"""
+Time complexity: O(N*log N), N = len(PnL). We iterate PnL, in each loop, we do priority heap operation which costs O(log N), therefore, O(N*log N) in overall
+Space complexity: O(N)
+"""
