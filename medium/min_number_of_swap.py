@@ -1,33 +1,3 @@
-# class Solution:
-#     def minSwaps(self, s: str) -> int:
-#         count = 0
-#         head = []
-#         tail = []
-#         i, j = 0, len(s)-1
-#         while i < j :
-#             if s[i] == ']' and len(head) == 0 and s[j] == '[' and len(tail) == 0:
-#                 count += 1
-#                 head.append('[')
-#                 tail.append(']')
-#                 i += 1
-#                 j -= 1
-#             else:
-#                 if s[i] == ']' and len(head) != 0:
-#                     head.pop()
-#                     i += 1
-#                 if  s[i] == '[':
-#                     head.append('[')
-#                     i += 1
-                
-#                 if s[j] == '[' and len(tail) != 0:
-#                     tail.pop()
-#                     j -= 1
-#                 if  s[j] == ']':
-#                     tail.append(']')
-#                     j -= 1
-#         return count
-
-
 class Solution:
     def minSwaps(self, s: str) -> int:
         count = 0
