@@ -1,4 +1,3 @@
-
 import collections
 from typing import List
 
@@ -20,3 +19,4 @@ class Solution(object):
 nums = [10, 5, 4, 6]
 sol = Solution()
 sol.countMaxOrSubsets(nums)
+
